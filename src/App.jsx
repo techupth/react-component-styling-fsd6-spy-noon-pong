@@ -1,17 +1,24 @@
 import "./App.css";
+import { PrimaryButton,SecondaryButton } from "./components/Button"
+import { AlertError,AlertWarning,AlertInfo,AlertSuccess } from "./components/Alert"
 
 function App() {
   return (
     <div className="App">
       <div className="button-components-section">
-        {/* Render ตัว Button 2 แบบ */}
+        <PrimaryButton />
+        <SecondaryButton />
       </div>
       <hr />
       <div className="alert-components-section">
-        {/* Render ตัว Alert 4 แบบ */}
+        <AlertError type="error" />
+        <AlertWarning type="warning" />
+        <AlertInfo type="info" />
+        <AlertSuccess type="success" />
       </div>
     </div>
   );
 }
+
 
 export default App;
